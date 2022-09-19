@@ -1,0 +1,22 @@
+{
+  "name": "arc-diff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truelinked/arc-diff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truelinked/arc-diff/issues"
+  },
+  "homepage": "https://github.com/truelinked/arc-diff#readme"
+}
