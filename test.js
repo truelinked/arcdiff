@@ -2,7 +2,25 @@ const diff = require('./lib/diff');
 const assert = require('assert')
 
 describe('arc-diff.js', function() {
-    it('Basic Object', () => {
+    it('Basic Empty Object', () => {
+        const a = null;
+        const b = null
+        const result = diff(a, b)
+        assert.equal(result.length, 0);
+    })
+
+    it('Basic Equal Object', () => {
+        const a = {
+            name: 'val',
+        }
+        const b = {
+            name: 'val',
+        }
+        const result = diff(a, b)
+        assert.equal(result.length, 0);
+    })
+
+    it('Basic Object Diff', () => {
         const a = {
             name: 'From',
         }
@@ -18,7 +36,7 @@ describe('arc-diff.js', function() {
         assert.equal(result[0].right, 'To')
     })
 
-    it('Basic Array', () => {
+    it('Basic Array diff', () => {
         const a = {
             values: [1,2]
         }
