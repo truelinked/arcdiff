@@ -1,6 +1,6 @@
 # arc-diff
 
-Compare differences between objects
+Simple compare between data structures
 
 # Install
 
@@ -11,7 +11,7 @@ npm install arc-diff
 # Usage
 
 ```
-const diff = require('arc-diff)
+const diff = require('arc-diff')
 
 const a = {
     name: 'John',
