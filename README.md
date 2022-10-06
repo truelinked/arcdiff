@@ -1,11 +1,11 @@
-# arc-diff
+# arcdiff
 
 Simple compare between data structures
 
 # Install
 
 ```
-npm install arc-diff
+npm install arcdiff
 ```
 
 # Usage

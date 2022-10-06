@@ -1,5 +1,5 @@
 {
-  "name": "arc-diff",
+  "name": "arcdiff",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/truelinked/arc-diff.git"
+    "url": "git+https://github.com/truelinked/arcdiff.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/truelinked/arc-diff/issues"
+    "url": "https://github.com/truelinked/arcdiff/issues"
   },
-  "homepage": "https://github.com/truelinked/arc-diff#readme",
+  "homepage": "https://github.com/truelinked/arcdiff#readme",
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
