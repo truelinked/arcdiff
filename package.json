@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/truelinked/arc-diff/issues"
   },
-  "homepage": "https://github.com/truelinked/arc-diff#readme"
+  "homepage": "https://github.com/truelinked/arc-diff#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "babel-eslint": "^10.1.0"
+  }
 }

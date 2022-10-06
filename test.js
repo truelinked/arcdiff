@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const diff = require('./lib/diff');
 const assert = require('assert')
 
@@ -50,5 +51,19 @@ describe('arc-diff.js', function() {
 
         assert.equal(result[1].action, 'DELETED')
         assert.equal(result[1].left, 2)
+    })
+
+    it('Test Property ignore diff', () => {
+        const a = {
+            id: 123,
+        }
+        const b = {
+            id: 567,
+        }
+        const result = diff(a, b, {
+            ignore: ['id']
+        })
+
+        assert.equal(result.length, 0);
     })
 })
