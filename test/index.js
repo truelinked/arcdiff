@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const diff = require('./lib/diff');
+const diff = require('../lib/diff');
 const assert = require('assert')
 
 describe('arc-diff.js', function() {
@@ -56,10 +56,37 @@ describe('arc-diff.js', function() {
     it('Test Property ignore diff', () => {
         const a = {
             id: 123,
+            name: "Monkey"
         }
         const b = {
             id: 567,
+            name: "Monkey"
         }
+        const result = diff(a, b, {
+            ignore: ['id']
+        })
+
+        assert.equal(result.length, 0);
+    })
+
+
+    it('Test Array Object Ignore diff', () => {
+        const a = [
+            {
+                "id": 41995,
+                "website": "https://www.google.com/",
+                "test" : null,
+            }
+        ]
+        
+        const b = [
+            {
+                "id": 1560,
+                "website": "https://www.google.com/",
+                "test" : null,
+            }
+        ]
+  
         const result = diff(a, b, {
             ignore: ['id']
         })
