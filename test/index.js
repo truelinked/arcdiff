@@ -97,7 +97,7 @@ describe('arc-diff.js', function () {
       {
         id: 41995,
         website: 'https://www.google.com/',
-        test: 'null',
+        test: null,
       },
     ];
 
