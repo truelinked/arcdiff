@@ -116,4 +116,21 @@ describe('arc-diff.js', function () {
 
     assert.equal(result.length, 0);
   });
+
+  it('blabla', () => {
+    const a = {
+      name: 'John',
+      roles: [{ id: 1, role: 'admin' }, { id: 2, role: 'user' }],
+      meta: { active: true },
+    };
+
+    const b = {
+      name: 'Jane',
+      roles: [{ id: 4, role: 'superadmin' }, { id: 3, role: 'guest' }],
+      meta: { active: false },
+    };
+
+    console.log(diff(a, b, { arrayKey: 'id' }));
+
+  });
 });
